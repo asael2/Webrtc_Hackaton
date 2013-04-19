@@ -11,6 +11,12 @@
 
 #participants video{
     border: 1px solid red;
+    width: 240px;
+}
+
+.aSection{
+     border: 1px solid green;
+     margin: 20px;
 }
 
 

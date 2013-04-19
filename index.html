@@ -6,93 +6,69 @@
     <title>Bootstrap, from Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="author" content="yamid.arenas@openenglish.com">
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <style>
-     
-    </style>
     <!--link href="css/bootstrap-responsive.css" rel="stylesheet"-->
     <link href="css/custom.css" rel="stylesheet">
-
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
-  <body>
+<body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Open English - Community finder</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="#">Open English - Community finder</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
+  </div>
 
-    <div class="container">
+<div class="container">
 
-      <h1>Open Training - Buenos Aires</h1>
-      <p>Welcome. Please write your email to find english study partners:</p>
-      
-      <div >
+  <div class="aSection" id="searchInit">
+    <h1>Find study partners</h1>
+    <p>Please write your email to find english study partners:</p>
+    <label for="email">Email</label> <input type="email" name="email" id="email">
+    <button id="search">Search</button>
+  </div>
 
-      <label for="email">Email</label> <input type="email" name="email" id="email">
-      <a href="#" class="search">Search</a>
+  <div class="aSection" id="createRoom">
+    <input type="text" id="conference-name" placeholder="Conference Name"> 
+    <button id="start-conferencing">Start video-conferencing</button>
+  </div>
 
-      </div>
+  <div class="aSection" id="createRoom">
+    <table id="rooms-list" class="visible"></table>
+  <!-- <a href="/video-conferencing/" target="_blank" title="Open this link in new tab. Then your conference room will be private!">OECommunity/<strong id="unique-token">#123456789</strong></a> -->
+  </div> 
 
 
+<div class="aSection" id="participants"></div>
 
-<table class="visible">
-            <tr>
-                <td style="text-align: right;">
-                    <input type="text" id="conference-name" placeholder="Conference Name">ener 
-                </td>
-                <td>
-                    <button id="start-conferencing">Start video-conferencing</button>
-                </td>
-            </tr>
-        </table>
-        <table id="rooms-list" class="visible"></table>
+</div>
 
-        <table class="visible">
-            <tr>
-                <td style="text-align: center;">
-                    <strong>Private conference</strong> ?? <a href="/video-conferencing/" target="_blank" title="Open this link in new tab. Then your conference room will be private!"><code>/video-conferencing/<strong id="unique-token">#123456789</strong></code></a>
-                </td>
-            </tr>
-        </table>
 
-        <div id="participants"></div>
-
-        <script src="js/wrtc/firebase.js"></script>
-        <script src="js/wrtc/RTCPeerConnection-v1.5.js"></script>
-        <script src="js/wrtc/conference.js"> </script>
-        <script src="js/wrtc/conference-ui.js"></script>
-
-    </div> <!-- /container -->
+<script src="js/wrtc/firebase.js"></script>
+<script src="js/wrtc/RTCPeerConnection-v1.5.js"></script>
+<script src="js/wrtc/conference.js"> </script>
+<script src="js/wrtc/conference-ui.js"></script>
+    <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->

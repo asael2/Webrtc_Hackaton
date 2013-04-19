@@ -57,7 +57,7 @@ function createButtonClickHandler() {
         conferenceUI.createRoom({
             roomName: ((document.getElementById('conference-name') || {
                 value: null
-            }).value || 'Anonymous') + ' // shared via ' + (navigator.vendor ? 'Google Chrome (Stable/Canary)' : 'Mozilla Firefox (Aurora/Nightly)')
+            }).value || 'Anonymous') 
         });
     });
     hideUnnecessaryStuff();
