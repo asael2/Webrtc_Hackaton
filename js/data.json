@@ -1,0 +1,17 @@
+[  {
+      "name": "Jose",
+      "lat": -34.609052,
+      "lng": -58.382378,
+      "description": "Friend Near to you 3"
+  }, {
+      "name": "Carlos",
+      "lat": -34.606508,
+      "lng": -58.392162,
+      "description": "Friend Near to you 2."
+  }, {
+      "name": "Martin",
+      "lat": -34.602976,
+      "lng": -58.437138,
+      "description": "Friend Near to you 3."
+  }
+  ]
