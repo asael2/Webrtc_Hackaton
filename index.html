@@ -30,9 +30,9 @@
         <a class="brand" href="#">OE- Community Finder</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li class="active"><a href="#">Room list</a></li>
-            <li><a href="#about">Find partners</a></li>
-            <li><a href="#contact">Create a Room</a></li>
+            <li><a class="createR" href="#">Create a Room</a></li>
+            <li><a class="roomL" href="#">Room list</a></li>
+            <li><a class="findP" href="#">Find partners</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -42,24 +42,21 @@
 <div class="container">
 <div class="logo"></div>
   <div class="aSection" id="searchInit">
-    <h1>Find study partners near to you</h1>
+    <h2>Find study partners near to you!</h2>
 <br>
+   <div class="aSection" id="lInput">
     <label for="email">Email</label> <input type="email" name="email" id="email">
     <button id="search">Search</button>
    
   </div>
 
-  
+   <div class="availist">
+    <ul>
+     </ul>
+  </div>
  <div class="aSection" id="mCanvas"><div class="aSection" id="map-canvas"></div></div>
   
-  <div class="availist">
-    <ul>
-      <li>Partner 1</li>
-      <li>Partner 2</li>
-      <li>Partner 3</li>
-
-    </ul>
-  </div>
+ 
 
 
   <div class="aSection" id="makeRoom">
@@ -80,8 +77,61 @@
 
 </div>
 
+
+<div id="footer_wrap" style="margin-top: 0px">                    
+  <div id="footer_content"> 
+    <div id="footer-logo"><div id="footer_logo_img"></div> <div id="footer-phone"><img class="country_flags" id="flag-argentina" src="http://d3lyqimqlfvq37.cloudfront.net/images/flag_bg.png" alt="(US Flag)"><span id="phone_number">11-5984-2336</span></div></div>
+    <div id="site_map">
+      <dl class="first">
+        <dt>Open English</dt>
+        <dd><a href="/pages/index-redirect.jsp">Inicio</a></dd> 
+        <dd><a href="/como-funciona-las-clases-de-ingles-en-linea.do">Cómo funciona</a></dd>
+        <dd><a href="/informacion-para-aprender-ingles.do">Acerca del curso</a></dd>
+        <dd><a href="/comparar-cursos-de-ingles.do">Compárenos</a></dd>
+        <dd><a href="/opiniones-sobre-open-english-curso-de-ingles.do">Testimonios</a></dd>
+        <dd><a href="/candidato/registrarse-en-curso-de-ingles.do">Comenzar</a></dd>
+      </dl>
+      <dl>
+        <dt>Soporte</dt>
+        <dd><a href="/soporte/inicio.do" title="Support">Soporte en línea</a></dd>
+        <dd><a href="/soporte/preguntas-frecuentes.do">Preguntas frecuentes</a></dd>
+        <dd><a href="/soporte/tutoriales-de-clases-de-ingles.do">Tutoriales</a></dd>
+        <dd><a href="/docs/politica-de-privacidad.do" class="iframe">Política de Privacidad</a></dd>
+        <dd><a href="/docs/condiciones-de-prestacion-de-servicio.do" class="iframe">Términos de Servicio</a></dd>
+      </dl> 
+      <dl class="long"> 
+        <dt>Otros enlaces</dt>
+        <dd><a href="/sobre-openenglish.do">¿Quiénes somos?</a></dd>
+        <dd><a href="/contactar-curso-ingles.do">Contáctenos</a></dd> 
+        <dd><a href="/oportunidades-laborales.do">Empleos</a></dd>
+        <dd><a href="/profesor-nativo-de-idioma-ingles.do">Conviértase en Profesor</a></dd>
+        <dd><a href="/gramatica/agreement-adjectives.do">Guía de Gramática</a></dd>   
+        <dd><a href="http://andresmorenoblog.com/">Blog de Andrés Moreno</a></dd>   
+      </dl>
+      <dl class="social_media">
+        <dt>Síganos</dt>
+        <dd><div class="footer_sprites" id="icn_social_twitter_gif">      
+          <a href="http://twitter.com/openenglish" target="_blank" class="sm_twitter" title="Twitter">Twitter</a>
+          </div>
+        </dd>
+        <dd><div class="footer_sprites" id="icn_social_facebook_gif">
+          <a href="http://www.facebook.com/openenglish" target="_blank" class="sm_facebook" title="Facebook">Facebook</a>
+          </div>
+        </dd>
+        <dd><div class="footer_sprites" id="icn_social_youtube_gif">
+          <a href="http://www.youtube.com/openenglishtv" target="_blank" class="sm_youtube" title="Youtube">Youtube</a></div>
+        </dd>
+      </dl> 
+    <div class="clear"></div>
+    </div>
+             <div class="clear"></div>
+    <p>Copyright © 2013 Open English LLC. Todos los derechos reservados.</p>
+  </div>
+</div>
+
+
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCik7oqTrNf1052hS-WRr018xYIo0LEAso&sensor=false&callback=initialize"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCik7oqTrNf1052hS-WRr018xYIo0LEAso&sensor=false"></script>
 <script src="js/custom.js"></script>
 <script src="js/wrtc/firebase.js"></script>
 <script src="js/wrtc/RTCPeerConnection-v1.5.js"></script>
